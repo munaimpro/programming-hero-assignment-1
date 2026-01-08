@@ -74,9 +74,89 @@ nav .logo img{
 }
 
 #hero {
-    background-image: url('../assets/hero-bg.png');
+    background-image: url('../assets/images/hero-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 116px;
+    padding: 116px 0;
+}
+
+#hero .hero-content {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#hero .hero-content .hero-badge {
+    margin: 0px auto 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--white-color);
+    border-radius: 1000px;
+    padding: 18px 22px;
+    width: 229px;
+}
+
+.hero-badge .status {
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    background-color: var(--green-color);
+    box-shadow: 0 0 0 6px rgba(48, 184, 104, 0.35), 0 0 0 12px rgba(48, 184, 104, 0.15);
+}
+
+.hero-badge .badge-text {
+    color: var(--green-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#hero .hero-content .hero-text {
+    margin: 0px auto 32px;
+    width: 770px;
+}
+
+.hero-text h2 {
+    color: var(--white-color);
+    font-size: 72px;
+    line-height: 84px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hero-text h2 span {
+    color: var(--green-color);
+}
+
+.hero-text p {
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#hero .hero-content .hero-button {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-button button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-button button img {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-button .button-outline {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
 }
