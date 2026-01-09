@@ -49,8 +49,8 @@ ul {
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    /* gap: 15px; */
+    /* transform: translateY(-2px); */
+    gap: 20px;
 }
 
 .btn-primary {
@@ -103,6 +103,10 @@ nav .menu a {
 nav .logo img {
     width: 139px;
     height: 60px;
+}
+
+nav button:hover {
+    transform: translateY(-2px);
 }
 
 #hero {
