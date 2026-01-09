@@ -29,26 +29,52 @@ a {
     text-decoration: none;
 }
 
-button {
+ul {
+    list-style-type: none;
+}
+
+.btn {
     border: none;
     padding: 12px 16px;
-    background-color: var(--green-color);
-    color: var(--white-color);
     font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s ease-in-out all;
+}
+
+.btn:hover {
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+nav, .hero-content, .notes-container,
+.second-brain-container,
+.early-access-container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* main style */
 nav {
     align-items: center;
-    width: 71%;
-    max-width: 1140px;
+    background-color: var(--white-color);
     padding: 16px 0;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 nav .menu {
@@ -61,6 +87,7 @@ nav .menu {
 nav .menu a {
     color: #000000;
     font-weight: 500;
+    line-height: 152%;
     transition: .3s ease-in-out all;
 }
 
@@ -81,13 +108,7 @@ nav .logo img{
     padding: 116px 0;
 }
 
-#hero .hero-content {
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-#hero .hero-content .hero-badge {
+.hero-content .hero-badge {
     margin: 0px auto 16px;
     display: flex;
     justify-content: center;
@@ -113,7 +134,7 @@ nav .logo img{
     font-weight: 500;
 }
 
-#hero .hero-content .hero-text {
+.hero-content .hero-text {
     margin: 0px auto 32px;
     width: 770px;
 }
@@ -145,30 +166,16 @@ nav .logo img{
     gap: 16px;
 }
 
-.hero-button button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .hero-button button img {
     width: 20px;
     height: 20px;
 }
 
-.hero-button .button-outline {
-    background-color: transparent;
-    border: 1px solid var(--white-color);
-}
-
 #notes {
-    padding: 0 120px;
+    padding: 50px 120px;
 }
 
 #notes .notes-container {
-    width: 71%;
-    max-width: 1140px;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -197,13 +204,13 @@ nav .logo img{
 }
 
 .note-content .note-card {
-    width: 322px;
-    height: 300px;
+    max-width: 322px;
+    min-height: 300px;
     padding: 40px 24px;
     display: flex;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+    box-shadow: 0 0 8px rgb(221 221 221);
 }
 
 .note-card .card-content .card-icon {
@@ -236,13 +243,15 @@ nav .logo img{
     color: var(--text-color);
 }
 
+.note-card:hover .card-icon {
+    transform: scale(1.2);
+}
+
 #second-brain {
     padding: 120px;
 }
 
 #second-brain .second-brain-container {
-    max-width: 1140px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -324,9 +333,60 @@ nav .logo img{
 }
 
 .early-access-container button {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+footer {
+    background-color: var(--heading-color);
+    padding: 120px 120px 30px;
+}
+
+footer .footer-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 24px auto 16px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.footer-container .footer-logo {
+    width: 350px;
+} 
+
+.footer-container .footer-logo img {
+    width: 139px;
+    height: 60px;
+}
+
+.footer-container .social-links {
+    width: 220px;
+}
+
+.social-links p {
+    color: var(--white-color);
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.social-links ul {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links ul li a {
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.footer-bottom p {
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
 }

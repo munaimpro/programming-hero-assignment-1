@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Vault</title>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="font-inter">
@@ -24,7 +28,7 @@
                 <li><a href="">Why It's Different</a></li>
             </ul>
             <div class="header-button">
-                <button>Get Early Access</button>
+                <button class="btn btn-primary">Get Early Access</button>
             </div>
         </nav>
 
@@ -40,8 +44,8 @@
                     <p>A private space to store notes, links, and learning summaries — designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
                 </div>
                 <div class="hero-button">
-                    <button>Start Building Your Vault <img src="./assets/images/ArrowRight.png" alt=""></button>
-                    <button class="button-outline"><img src="./assets/images/Play.png" alt=""> See How It Works</button>
+                    <button class="btn btn-primary">Start Building Your Vault <img src="./assets/images/ArrowRight.png" alt=""></button>
+                    <button class="btn btn-outline"><img src="./assets/images/Play.png" alt=""> See How It Works</button>
                 </div>
             </div>
         </section>
@@ -126,11 +130,30 @@
         <div class="early-access-container">
             <h2>Ready to think more clearly?</h2>
             <p>Join thousands of learners who are building their personal knowledge vaults.<br>Start free, no credit card required.</p>
-            <button>Get Early Access <img src="./assets/images/ArrowRight.png" alt="arrow right"></button>
+            <button class="btn btn-primary">Get Early Access <img src="./assets/images/ArrowRight.png" alt="arrow right"></button>
             <p>Free during early access <span>&bull;</span> No credit card needed</p>
         </div>
     </section>
 
-    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./assets/images/logo-footer.png" alt="logo">
+            </div>
+            <div class="social-links">
+                <p>Social Links</p>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p class="text-center">© 2026 Personal Knowledge Vault. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
