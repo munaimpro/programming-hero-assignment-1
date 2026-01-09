@@ -198,7 +198,10 @@ nav .logo img{
 
 .note-content .note-card {
     width: 322px;
+    height: 300px;
     padding: 40px 24px;
+    display: flex;
+    align-items: center;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .6);
 }
